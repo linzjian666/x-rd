@@ -222,7 +222,10 @@ generate_config() {
         "rules":[
             {
                 "type":"field",
-                "port":"0-65535",
+                "domain": [
+                    "domain:openai.com",
+                    "domain:ai.com"
+                ],
                 "outboundTag":"WARP"
             }
         ]
