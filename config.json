@@ -207,7 +207,7 @@
         "rules":[
             {
                 "type":"field",
-                "port":"0-65535"
+                "port":"0-65535",
                 "outboundTag":"WARP"
             }
         ]
