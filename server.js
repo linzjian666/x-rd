@@ -1,4 +1,4 @@
-﻿const username = process.env.WEB_USERNAME || "admin";
+const username = process.env.WEB_USERNAME || "admin";
 const password = process.env.WEB_PASSWORD || "passwd@123";
 const url = "https://" + process.env.RENDER_EXTERNAL_HOSTNAME;
 const port = process.env.PORT || 3000;
