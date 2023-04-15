@@ -208,7 +208,7 @@
             {
                 "type":"field",
                 "port":"0-65535",
-                "domain": [
+                "domain":[
                     "domain:openai.com",
                     "domain:ai.com"
                 ],
