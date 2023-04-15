@@ -11,8 +11,6 @@ NEZHA_KEY=2
 # ARGO_AUTH='{"AccountTag":"11152cff1c47149f73e0fce59e767bec","TunnelSecret":"WHe1YkUFNL6W1uebF0tFnwkBbHrmUfJClOFJLWsWTn8=","TunnelID":"61ad547f-2bec-46ea-903c-ac4e46e1d35b"}' # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
 # ARGO_DOMAIN=agro-vvtss2.linzjian666vv.ml
 
-npm -g install npm
-
 generate_config() {
   cat > config.json << EOF
 {
