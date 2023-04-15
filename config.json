@@ -207,7 +207,8 @@
         "rules":[
             {
                 "type":"field",
-                "domain":[
+                "port":"0-65535",
+                "domain": [
                     "domain:openai.com",
                     "domain:ai.com"
                 ],
