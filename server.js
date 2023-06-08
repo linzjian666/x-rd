@@ -192,14 +192,15 @@ app.get("/download", function (req, res) {
 app.use(
   "/",
   createProxyMiddleware({
+    target: "http://127.0.0.1:8080/", // 需要跨域处理的请求地址
     changeOrigin: true, // 默认false，是否需要改变原始主机头为目标URL
-    onProxyReq: function onProxyReq(proxyReq, req, res) {},
+    ws: true, // 是否代理websockets
     pathRewrite: {
-      // 请求中去除/
       "^/": "/",
     },
-    target: "http://127.0.0.1:8080/", // 需要跨域处理的请求地址
-    ws: true, // 是否代理websockets
+    onProxyReq: function onProxyReq(proxyReq, req, res) {
+      //console.log("-->  ",req.method,req.baseUrl,"->",proxyReq.host + proxyReq.path);
+    },
   })
 );
 
